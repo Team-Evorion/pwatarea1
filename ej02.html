@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="fonts.css">
+        <title>Ejercicio 2 - Enlaces y Listas</title>
+        <style>
+            body {
+                font-family: Montserrat,Arial, sans-serif;
+                background: linear-gradient(135deg, #ccf5e9, #d5eaff, #c7d2fe);
+                padding: 40px 20px;
+                margin: 0;
+                min-height: 100vh;
+                box-sizing: border-box;
+            }
+            .card {
+                background: white;
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            }
+            h2 { color: #003366; }
+            ul { line-height: 1.8; }
+            a.social-btn {
+                display: inline-block;
+                background-color: #1877f2;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                margin-top: 12px;
+                margin-bottom: 8px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+            .social-btn:hover {
+                background-color: #7c3aed;
+                transform: translateY(-4px);
+            }
+            .back-link {
+                display: block;
+                margin-top: 20px;
+                color: #0891b2;
+                text-decoration: none;
+            }
+            .back-link:hover {
+                color: #7c3aed;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+<body>
+    <div class="card">
+        <h2>Mi Red Social Favorita</h2>
+        <p>Visita mi perfil o plataforma favorita:</p>
+        <a href="https://github.com/Zahidjoe07" target="_blank" class="social-btn">Mi Perfil en GitHub</a>
+        
+        <!-- <a href="https://github.com/Zahidjoe07/Biblioteca-Python" target="_blank" class="social-btn">Visitar GitHub</a> -->
+
+        <h2>Mis Pasatiempos</h2>
+        <ul>
+            <li>Programación y desarrollo de software</li>
+            <li>Conducción y mecánica de motocicletas</li>
+            <li>Videojuegos de simulador y estrategia en PC</li>
+        </ul>
+
+        <a href="index.html" class="back-link">&larr; Volver al Menú</a>
+    </div>
+</body>
+</html>

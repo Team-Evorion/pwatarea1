@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Biografía Completa</title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        :root {
+            --primary: #002b5b;
+            --secondary: #004080;
+            --light: #f4f6f9;
+        }
+        body {
+            font-family: Montserrat,Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #dbeafe, #e9ddff, #e2e8f0);
+            color: #333;
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .layout-container {
+            display: flex;
+            max-width: 1100px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 15px;
+        }
+        main {
+            flex: 3;
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid #0891b2;
+            border-bottom: 4px solid #7c3aed;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        aside {
+            flex: 1.05;
+            background: #edf2fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #0891b2;
+            border-right: 4px solid #7c3aed;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+        h2 {
+            color: var(--secondary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 5px;
+        }
+        .back-link {
+            display: block;
+            margin-top: 12px;
+            color: #0891b2;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #7c3aed;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .layout-container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Biografía Oficial - Jesús Fernández</h1>
+        <p>Estudiante de Ingeniería en Sistemas Inteligentes | Universidad Bolivariana del Ecuador</p>
+    </header>
+
+    <!-- Estructura Principal -->
+    <div class="layout-container">
+        <!-- Contenido Principal -->
+        <main>
+            <section>
+                <h2>Perfil Académico y Profesional</h2>
+                <p>Actualmente me encuentro cursando el tercer semestre de la carrera de Ingeniería en Sistemas Inteligentes. Me apasiona el desarrollo de software, la lógica de programación y el diseño de soluciones tecnológicas enfocadas a la automatización.</p>
+                <p>Adicionalmente, ejerzo el liderazgo en la Rama Estudiantil IEEE de la universidad y me desempeño laboralmente como asistente en el área de almacén y soporte.</p>
+            </section>
+
+            <section>
+                <h2>Habilidades y Competencias</h2>
+                <ul>
+                    <li>Maquetación y Desarrollo Web (HTML5, CSS3, JavaScript)</li>
+                    <li>Programación en Python, C++ y Java</li>
+                    <li>Bases de Datos Relacionales y NoSQL</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Datos Rápidos</h3>
+            <p><strong>Nacimiento:</strong> 02/02/2006</p>
+            <p><strong>Ubicación:</strong> Ecuador</p>
+            <p><strong>Universidad:</strong> UBE</p>
+            <hr>
+            <h3>Enlaces</h3>
+            <a href="ej05.html" class="back-link"> &longleftarrow; Ver Biografía del Ejercicio 5
+            </a>
+            <a href="index.html" class="back-link"> &longleftarrow; Menú Principal
+            </a>
+        </aside>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Universidad Bolivariana del Ecuador - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

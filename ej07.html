@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Barra de Navegación</title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        body {
+            font-family: Montserrat,Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #dbeafe, #e9ddff, #cffafe);
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: #003366;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 12px;
+            margin: 0;
+            display: inline-block;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        /* Cambio de color cuando se les hace clic / estado activo */
+        nav a:visited { color: white; }
+        nav a:hover { background-color: #0056b3; color: white; }
+        nav a:active { background-color: #ffcc00; color: #000; }
+
+        .content {
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 2px solid;
+            border-color: #0891b2 #7c3aed #7c3aed #0891b2;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0891b2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #7c3aed;
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <nav>
+        <a href="ej05.html#presentacion">Presentación Personal</a>
+        <a href="ej05.html#experiencia">Experiencia Laboral</a>
+        <a href="https://github.com" target="_blank">Visitar GitHub</a>
+        <a href="https://linkedin.com" target="_blank">Visitar LinkedIn</a>
+    </nav>
+
+    <div class="content">
+        <h2>Navegación con Estilos Dinámicos</h2>
+        <p>Utiliza la barra superior para navegar hacia la biografía (enlace interno del Ejercicio 5) o acceder a las redes sociales (enlaces externos).</p>
+        <p><em>Nota: Al hacer clic en los enlaces notarás el cambio de color dinámico configurado con la pseudoclase CSS <code>:active</code>.</em></p>
+        <a href="index.html" class="back-link">&longleftarrow; Volver al Menú Principal</a>
+    </div>
+
+</body>
+</html>

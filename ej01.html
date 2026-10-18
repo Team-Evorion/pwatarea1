@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Mi primera página web</title>
+    <style>
+        body {
+            font-family: Montserrat,Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #e9ddff, #f8e7ff);
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 3px solid;
+            border-color: #427b80 #a78bfa #a78bfa #427b80;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .container:hover { transform: translateY(-5px);}
+        h1 { color: #003366; }
+        p {
+            font-size: 18px;
+            color: #333; 
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color:#0066cc;
+            text-decoration:none;
+        }
+        .back-link {
+            color: #0891b2;
+            text-decoration: none;
+        }
+        .back-link:hover {
+                color: #7c3aed;
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hola, mundo!</h1>
+        <p>Mi nombre es <strong>Jesús Rafael Fernández Pérez</strong>.</p>
+        <a href="index.html" class="back-link">&larr; Volver al Menú Principal</a>
+    </div>
+</body>
+</html>
